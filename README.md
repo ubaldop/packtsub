@@ -1,20 +1,44 @@
 PacktSub
 ===
-#### A tiny Scala tool to download PacktPub Free Leaning contents
+#### A Scala tool to download PacktPub Free Leaning contents
 
 ---
 
-##TOC
-
-[1. Requirements](#requirements)
-###2. Implementation
-###3. Setup
-###4. Dependencies
-###5. License
+### [Description](#description-1)
+### [Implementation](#implementation-1)
+### [Setup](#setup-1)
+### [Dependencies](#dependencies-1)
+### [License](#license-1)
 
 ---
 
-##Requirements
+## Description
 
-It must be a tool to log in on the PacktPub platform to download the free title available each day.  
-Also, when the file has been downloaded, this tool MUST send an email to a specific recipient about the occurred download.
+**PacktSub** is a Scala subscriber to the Packt Publishing Free Learning resources.
+Each day, on the Packt Publishing web site, a free title is available.
+
+PacktSub logs in the Packt Publishing website, claim the free title and notify the user about the claimed resource by e-mail.
+
+---
+
+## Implementation
+
+---
+
+## Setup
+
+---
+
+## Dependencies
+
+- Gigahorse
+- SSoup
+- ScalaTest
+- Apache Commons Mail
+- Typesafe Config
+
+---
+
+## License
+
+This tool is released under the Apache License Version 2.0
