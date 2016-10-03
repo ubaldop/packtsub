@@ -113,7 +113,7 @@ class PacktSubSpec extends FlatSpec with Matchers {
     new HtmlCrawler {
       val sessionId = crawlSessionId(html)
       sessionId shouldBe a[Some[_]]
-      sessionId.get shouldBe "123456789aaaaaabkaja192934"
+      sessionId.getOrElse("") shouldBe "123456789aaaaaabkaja192934"
     }    
   }
   

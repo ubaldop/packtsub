@@ -19,3 +19,6 @@ def stagingClean = Command.command("staging-clean"){currentState =>
 }		
 
 commands ++= Seq(stagingClean)
+
+enablePlugins(JavaAppPackaging)
+mainClass in Compile := Some("com.p3trur0.packtsub.PacktSub")

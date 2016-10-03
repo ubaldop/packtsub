@@ -1,12 +1,9 @@
 package com.p3trur0.packtsub
 
-import org.apache.commons.mail.Email
-import org.apache.commons.mail.HtmlEmail
-import org.apache.commons.mail.DefaultAuthenticator
-import scala.util.Success
+import org.apache.commons.mail.{Email, HtmlEmail, DefaultAuthenticator}
 import scala.concurrent.Future
-import scala.util.Failure
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.{Success, Failure}
 
 sealed trait Mail {
 	val to = PacktSubConfiguration.mailConfiguration.to

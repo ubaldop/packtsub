@@ -1,15 +1,12 @@
 package com.p3trur0.packtsub
 
-import org.filippodeluca.ssoup.SSoup._
-import org.filippodeluca.ssoup.RichDocument
-import scala.concurrent.duration._
 import java.net.URL
-import scala.util.matching.Regex
 import java.util.regex.Pattern
-import scala.util.Try
-import scala.util.Failure
-import scala.util.Success
-import org.filippodeluca.ssoup.RichElements
+import org.filippodeluca.ssoup.{RichDocument, RichElements}
+import org.filippodeluca.ssoup.SSoup._
+import scala.concurrent.duration._
+import scala.util.matching.Regex
+import scala.util.{Try, Failure, Success}
 
 case class TitleInfo(title: String, formId: String, claimURL: String)
 

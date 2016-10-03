@@ -1,14 +1,11 @@
 package com.p3trur0.packtsub
 
-import scala.concurrent.Await
-import scala.concurrent.duration._
+import scala.Left
+import scala.concurrent.{Await, Future}
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.DurationInt
 
-import com.typesafe.config.ConfigFactory
-
-import gigahorse.Gigahorse
-import scala.concurrent.Future
-import gigahorse.HeaderNames
+import gigahorse.{Gigahorse, HeaderNames}
 
 object PacktConnector {
   def apply(implicit config: PacktConfig) = new PacktConnector
@@ -45,7 +42,7 @@ class PacktConnector(implicit config: PacktConfig) extends HtmlCrawler {
         val downloadRequest = for {
           sessionId <- crawlSessionId(response.body)
         } yield {
-          Gigahorse.url(titleInfo.claimURL).get.addHeaders {
+          Gigahorse.url(titleInfo.claimURL).addHeaders {
             headers
             (HeaderNames.REFERER, config.loginUrl)
             (HeaderNames.COOKIE, s"SESS_live=$sessionId;logged_in=0;")
@@ -53,7 +50,7 @@ class PacktConnector(implicit config: PacktConfig) extends HtmlCrawler {
         }
 
         downloadRequest match {
-          case Some(request) => http.run(request, Gigahorse.asEither)
+          case Some(request) => http.run(request.get, Gigahorse.asEither)
           case None          => Future { Left("Not valid download request has been built") }
         }
 
