@@ -33,16 +33,10 @@ object PacktSubConfiguration {
   }
 
   val smtpConfiguration: Try[SMTPConfig] = {
-    try {
-     Success(SMTPConfig(
+    Try (SMTPConfig(
         applicationConfig.getString("email.smtp.server"),
         applicationConfig.getString("email.smtp.user"),
         applicationConfig.getString("email.smtp.password")))
-      }
-    
-    catch {
-      case e: Exception => Failure(e)
-    }
   }
 
   val packtConfiguration: Option[PacktConfig] =
