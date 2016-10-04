@@ -46,7 +46,7 @@ For example, if you will to run PacktSub each night at 03.00AM, you can schedule
 0 3 * * * /<PROJECT_LOCATION>/target/universal/stage/bin/packtsub
 ```
 
-where <PROJECT_LOCATION> is the actual PacktSub location on your machine.
+where `<PROJECT_LOCATION>` is the actual PacktSub location on your machine.
 
 #### Environment configuration
 
