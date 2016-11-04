@@ -2,7 +2,8 @@
 ![PacktSub Logo](packtsub.png "PacktSub Logo")
 
 #### A Scala utility to download PacktPub Free Leaning contents
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92ac317697eb4d55b32d94c8f8901da6)](https://www.codacy.com/app/ubaldopescatore/packtsub?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=P3trur0/packtsub&amp;utm_campaign=Badge_Grade)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5eeca5d4f0804cad8f4f60659088fca1)](https://www.codacy.com/app/P3trur0/packtsub?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=P3trur0/packtsub&amp;utm_campaign=Badge_Grade)
 ---
 
 ## Description
