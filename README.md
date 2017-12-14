@@ -1,9 +1,9 @@
-
-![PacktSub Logo](packtsub.png "PacktSub Logo")
+<p align="center">
+  <img src="https://github.com/P3trur0/packtsub/blob/master/packtsub.png?raw=true" alt="PacktSub Logo"/>
+</p>
 
 #### A Scala utility to download PacktPub Free Learning contents
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5eeca5d4f0804cad8f4f60659088fca1)](https://www.codacy.com/app/P3trur0/packtsub?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=P3trur0/packtsub&amp;utm_campaign=Badge_Grade)
 ---
 
 ## Description
